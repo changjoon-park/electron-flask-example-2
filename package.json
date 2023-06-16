@@ -5,12 +5,18 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager . electron-flask-example-2 --platform=win32 --arch=x64 --out=dist --ignore=node_modules/electron-*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron": "^25.1.1"
+    "electron": "^25.1.1",
+    "electron-packager": "^17.1.1"
+  },
+  "devDependency": {
+    "electron": "^25.1.1",
+    "electron-packager": "^17.1.1"
   }
 }
