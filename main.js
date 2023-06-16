@@ -14,10 +14,10 @@ function createWindow () {
   win.loadFile('index.html')
 
   // Path to Python venv
-  const venvPath = path.join(__dirname, '..', 'server', '.venv', 'bin', 'python');
+  const venvPath = path.join(__dirname, 'server', '.venv', 'Scripts', 'python.exe');
 
   // Path to Flask application
-  const flaskAppPath = path.join(__dirname, '..', 'server', 'app.py');
+  const flaskAppPath = path.join(__dirname, 'server', 'app.py');
 
   // Start Flask server
   const flaskServer = spawn(venvPath, [flaskAppPath]);
